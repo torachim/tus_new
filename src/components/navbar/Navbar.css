@@ -1,0 +1,121 @@
+.tus__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.5rem 6rem;
+}
+
+.tus__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tus__navbar-links-logo {
+    margin-right: 2rem;
+}
+
+.tus__navbar-links-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.tus__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tus__navbar-links_container p,
+.tus__navbar-menu_container {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.tus__navbar-menu {
+    margin-left: 1rem;
+    
+    display:none;
+    position: relative;
+}
+
+.tus__navbar-menu svg {
+    cursor: pointer;
+}
+
+.tus__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: var(--color-header);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.tus__navbar-links_container-drpdn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0 8 16 0 rgba(0,0,0,0.2);
+}
+
+.tus__navbar-links_container-drpdn p {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+
+.tus__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.tus__navbar-links_container p:hover {text-decoration: underline;}
+.tus__navbar-links_container p:hover .tus__navbar-links_container-drpdn {display: flex;}
+.tus__navbar-links_container-drpdn p:hover {text-decoration: none; color: var(--color-highlight);}
+
+@media screen and (max-width: 1050px) {
+    .tus__navbar-links_container{ 
+        display: none;
+    }
+
+    .tus__navbar-menu {
+        display: flex;;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tus__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+   .tus__navbar {
+    padding: 2rem;
+   }
+
+   .tus__navbar-menu_container{
+    top: 20px;
+   }
+
+}
