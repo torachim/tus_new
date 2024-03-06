@@ -63,6 +63,7 @@ const Menu = () => (
         <AnlagenMenu />
     </div>
   </p>
+  <p><a href = "#Aktuelles">Aktuelles</a></p>
   <p><a href = "#Mitgliedschaft">Mitgliedschaft</a></p>
   <p><a href = "#Überuns">Über uns</a></p>
   <p><a href = "#Kontak">Kontakt</a></p>
