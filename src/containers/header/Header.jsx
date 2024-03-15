@@ -4,10 +4,11 @@ import './Header.css'
 import Startseitenbild from '../../assets/Startseite.jpeg'
 
 
+
 const Header = () => {
   return (
     <div className = "tus__header" id = "home">
-      <div className = "tus__header-content section__padding">
+      <div className = "tus__header-content section__padding__top">
         <p className = "welcome__text">Willkommen beim</p>
         <h1 className = "gradient__text">TuS Kaisersesch</h1>
         <p>Dem Sportverein aus der Vordereifel. <br />

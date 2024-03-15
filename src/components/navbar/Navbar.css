@@ -93,6 +93,12 @@
 .tus__navbar-links_container p:hover .tus__navbar-links_container-drpdn {display: flex;}
 .tus__navbar-links_container-drpdn p:hover {text-decoration: none; color: var(--color-highlight);}
 
+@media screen and (max-width: 1100px){
+    .tus__navbar-links_container p {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     .tus__navbar-links_container{ 
         display: none;
