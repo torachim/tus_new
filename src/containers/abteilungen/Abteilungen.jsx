@@ -12,7 +12,7 @@ const Abteilungen = () => {
            Jede Abteilung verfügt über ein breites Trainingsangebot. <br />
            Auf den Seiten der Abteilungen findest du mehr Informationen.</p>
         <div className='tus_abteilungen_cardcontent'>
-          <Cardcontent Bild={Fußballtest} altText={"Fußball"} buttontext={"Fußball"}/>
+          <Cardcontent Bild={Fußballtest} altText={"Fußball"} link = {"#"} buttontext={"Fußball"}/>
           <Cardcontent buttontext={"Turnen"}/>
           <Cardcontent buttontext={"Leichtathletik"}/>
         </div>

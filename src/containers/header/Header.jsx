@@ -18,7 +18,7 @@ const Header = () => {
            Bei uns findest Du genau das richtige für dich!
         </p>
         <div className = "tus__header-content-buttons">
-          <button type = "button"><a href = "MehrErfahren">Erfahre Mehr</a></button>
+          <button type = "button"><a href = "#MehrErfahren">Erfahre Mehr</a></button>
           <button type = "button"><a href = "#Mitgliedwerden">Mitglied werden</a></button>
         </div>
       </div>
