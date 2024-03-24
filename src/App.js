@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Abteilungen, Features, Footer, Header, Possibillity } from './containers';
-import { Cta, Navbar, Brand} from './components';
+import { Cta, Navbar, Brand, Hovercard} from './components';
 
 import './App.css'
 
@@ -16,6 +16,7 @@ const App = () => {
       <Abteilungen />
       <Features />
       <Possibillity />
+      <Hovercard />
       <Cta />
       <Brand />
       <Footer />
