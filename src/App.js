@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Abteilungen, Features, Footer, Header, Possibillity } from './containers';
-import { Cta, Navbar, Brand, Hovercard} from './components';
+import { Cta, Navbar, Brand, Hovercard, HorizontalScroll} from './components';
 
 import './App.css'
 
@@ -13,10 +13,18 @@ const App = () => {
         <Navbar />
         <Header />
       </div>
-      <Abteilungen />
-      <Features />
+      <Abteilungen />      
       <Possibillity />
-      <Hovercard />
+      <Cta />
+      <Brand />
+      <Footer />
+      <Cta />
+      <Brand />
+      <Footer />
+      <Cta />
+      <Brand />
+      <Footer />
+      <Footer />
       <Cta />
       <Brand />
       <Footer />

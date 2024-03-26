@@ -27,38 +27,12 @@
     color: var(--color-text-abteilungen);
 }
 
-.tus_abteilungen_cardcontent{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.tus_abteilungen_scroler{
+    margin-top: 10px;
 }
 
-.arrow-card{
-    height: 18rem;
-    width: 16rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 4px;
-    background-color: transparent;
 
-}
 
-.arrow-card p{
-    font-size: 24px;
-    font-family: var(--font-family);
-    margin-top: 2rem;
-}
-
-.circle-arrow{
-    border: 4px solid #fff;
-    border-radius: 50%;
-    height: 155px;
-    width: 155px;
-    margin-top: 1.5rem;
-}
 
 
 
