@@ -3,9 +3,12 @@ import './Abteilungen.css'
 import { RiArrowUpSLine, RiArrowDownSLine } from 'react-icons/ri'
 import { Cardcontent } from '../../components'
 import { Hovercard } from '../../components'
-import Fußballtest from '../../assets/fußball.jpeg'
-import Turnentest from '../../assets/turnentest.jpg';
-import Leichtathletiktest from '../../assets/leichtathletiktest.jpg'; 
+import { TbPlayFootball, TbRun, TbPlayBasketball, TbPlayHandball, TbPlayVolleyball, TbSoccerField} from 'react-icons/tb'
+import { MdSportsGymnastics, MdSportsKabaddi, MdSportsTennis } from 'react-icons/md'
+import { FaTableTennisPaddleBall } from "react-icons/fa6";
+
+
+
 
 const Abteilungen = () => {
 
@@ -20,9 +23,9 @@ const Abteilungen = () => {
            Auf den Seiten der Abteilungen findest du mehr Informationen.</p>
       </div>     
       <div className='tus_abteilungen_cardcontent'>
-          <Hovercard />
-          <Hovercard />
-          <Hovercard />
+          <Hovercard Bild={<TbSoccerField/>}  Link={'#Fußball'} ButtonText={'Fußball'} />
+          <Hovercard Bild={<FaTableTennisPaddleBall />}  Link={'#Leichtathletik'} ButtonText={'Leichtathletik'} />
+          <Hovercard Bild={<MdSportsTennis/>}  Link={'#Turnen'} ButtonText={'Turnen'} />
           <div className = 'arrow-card'>
             <div className = 'circle-arrow'>
               {toggleMenu
