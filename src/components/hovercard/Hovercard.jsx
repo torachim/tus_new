@@ -1,10 +1,10 @@
 import React from 'react'
-import { TbPlayFootball } from 'react-icons/tb'
+
 import './Hovercard.css'
 
-const hovercard = ({Bild, Link, ButtonText, ID}) => {
+const hovercard = ({Bild, Link, ButtonText}) => {
   return (
-    <div key={ID} className='card-background'>
+    <div className='card-background'>
         <div className='card-info'>
             <div className='card-top-image'>
                 {Bild}

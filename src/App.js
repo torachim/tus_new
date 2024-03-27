@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Abteilungen, Features, Footer, Header, Possibillity } from './containers';
-import { Cta, Navbar, Brand, Hovercard, HorizontalScroll} from './components';
+import { Abteilungen, Footer, Header,  Kurse } from './containers';
+import { Cta, Navbar, Brand } from './components';
 
 import './App.css'
 
@@ -14,7 +14,7 @@ const App = () => {
         <Header />
       </div>
       <Abteilungen />      
-      <Possibillity />
+      <Kurse />
       <Cta />
       <Brand />
       <Footer />
