@@ -49,7 +49,7 @@
     display: felx;
     flex-direction: row;
     justify-content: space-around;
-    margin: 2rem 8rem;
+    margin: 2rem 20rem;
 }
 
 .tus_kurse_content_button button{
@@ -84,7 +84,7 @@
     }
 
     .tus_kurse_content_button{
-        margin: 1rem 6rem
+        margin: 1rem 9rem
     }
 
     .tus_kurse_content_button button{
@@ -93,7 +93,7 @@
 }
 
 @media screen and (max-width: 650px){
-    .tus_kurse_img img{
+    .tus_kurse_img {
         display: none;
     }
 
