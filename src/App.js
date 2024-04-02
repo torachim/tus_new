@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Abteilungen, Footer, Header,  Kurse } from './containers';
+import { Abteilungen, Footer, Header,  Kurse, Anlagen} from './containers';
 import { Cta, Navbar, Brand } from './components';
 
 import './App.css'
@@ -15,7 +15,7 @@ const App = () => {
       </div>
       <Abteilungen />      
       <Kurse />
-      <Cta />
+      <Anlagen />
       <Brand />
       <Footer />
       <Cta />
