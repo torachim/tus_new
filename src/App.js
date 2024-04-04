@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Abteilungen, Footer, Header,  Kurse, Anlagen} from './containers';
-import { Cta, Navbar, Brand } from './components';
+import { Cta, Navbar, Brand, Slides } from './components';
 
 import './App.css'
 
@@ -16,6 +16,7 @@ const App = () => {
       <Abteilungen />      
       <Kurse />
       <Anlagen />
+      <Slides />
       <Brand />
       <Footer />
       <Cta />
