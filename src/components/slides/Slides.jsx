@@ -2,11 +2,11 @@ import React from 'react'
 import './Slides.css'
 import  Waldsportplatz from '../../assets/Waldsportplatz.jpeg'
 
-const Slides = () => {
+const Slides = ({Bild, Name, Beschreibung}) => {
   return (
     <div className='slides-container'>
       <img src = {Waldsportplatz} alt='Waldsportplatz'/>
-      <div className='slides-container-content'>
+      <div className='slides-container-content scale-up-center'>
         <h1>WALDSPORTPLATZ</h1>
         <div className='slides-container-content-text'>
             <p>
