@@ -28,7 +28,7 @@ const HorAnlagenScroll = () => {
              style={{transform: `translate(-${activeIndex * 100}%)`
              }}>
             {Anlagen.map((anlage) =>{
-                return <Slides Bild={anlage.Bild} Name={anlage.Name} Beschreibung={anlage.Beschreibung}/>
+                return <Slides anlage={anlage} />;
             })}
         </div>
 

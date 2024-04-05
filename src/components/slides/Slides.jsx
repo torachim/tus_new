@@ -2,15 +2,15 @@ import React from 'react'
 import './Slides.css'
 import  Waldsportplatz from '../../assets/Waldsportplatz.jpeg'
 
-const Slides = ({Bild, Name, Beschreibung}) => {
+const Slides = ({anlage}) => {
   return (
     <div className='slides-container'>
-      <img src = {Bild} />
+      <img src = {anlage.Bild} />
       <div className='slides-container-content scale-up-center'>
-        <h1>{Name}</h1>
+        <h1>{anlage.Name}</h1>
         <div className='slides-container-content-text'>
             <p>
-              {Beschreibung}
+              {anlage.Beschreibung}
             </p>
             <div className='slides-container-button'>
                 <button type='button'><a href='#Waldsportplatz'>Mehr Erfahren</a></button>
