@@ -82,4 +82,3 @@ const cards = [
     button_text: 'Tischfußball',
   },
 ]
- 

@@ -1,6 +1,6 @@
 .slides-container{
     position: relative;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     border: none;
 }
@@ -22,8 +22,11 @@
     font-family: var(--font-family);
 }
 
+
 .slides-container-content h1{
     font-size: 48px;
+    display: flex;
+    justify-content: center;
 }
 
 .slides-container-content-text{
@@ -41,7 +44,7 @@
 .slides-container-button{
     margin-right: 10px;
     position: relative;
-    margin-top: -30px;
+
 }
 
 .slides-container-button button{
@@ -87,9 +90,7 @@
         border-radius: 8.5px;
     }
 
-    .slides-container-button{
-        margin-top: -10px;
-    }
+
 }
 
 @media screen and (max-width: 650px){
@@ -114,9 +115,6 @@
         border-radius: 7px;
     }
 
-    .slides-container-button{
-        margin-top: 0px;
-    }
 }
 
 @media screen and (max-width: 480px){
