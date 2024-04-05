@@ -5,13 +5,12 @@ import  Waldsportplatz from '../../assets/Waldsportplatz.jpeg'
 const Slides = ({Bild, Name, Beschreibung}) => {
   return (
     <div className='slides-container'>
-      <img src = {Waldsportplatz} alt='Waldsportplatz'/>
+      <img src = {Bild} />
       <div className='slides-container-content scale-up-center'>
-        <h1>WALDSPORTPLATZ</h1>
+        <h1>{Name}</h1>
         <div className='slides-container-content-text'>
             <p>
-            Der Waldsportplatz. Hier findet hauptsächlich Fußballtraining <br/>
-            und Fußballspiele statt. Auch der Jährliche Crosslauf startet hier
+              {Beschreibung}
             </p>
             <div className='slides-container-button'>
                 <button type='button'><a href='#Waldsportplatz'>Mehr Erfahren</a></button>

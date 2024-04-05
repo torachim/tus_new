@@ -16,7 +16,6 @@ const App = () => {
       <Abteilungen />      
       <Kurse />
       <Anlagen />
-      <Slides />
       <Brand />
       <Footer />
       <Cta />

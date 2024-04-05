@@ -5,14 +5,66 @@ import Tennisplatz from '../../assets/Tennisball.jpeg'
 import MeGeHa from '../../assets/mgh.jpeg'
 import Sporthalle from '../../assets/sporthalle.jpeg'
 import './HorAnlagenScroll.css'
+import { Slides } from '../../components'
 
 const HorAnlagenScroll = () => {
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  
+  const updateIndex = (newIndex) => {
+    if (newIndex < 0){
+        newIndex = 0;
+    }
+    else if (newIndex >= Anlagen.length){
+        newIndex = Anlagen.length -1;
+    }
+
+    setActiveIndex(newIndex);
+  };
+
   return (
-    <div>
-       HorAnlagenScroll
+    <div className='carousel'>
+        <div className='carousel-inner'
+             style={{transform: `translate(-${activeIndex * 100}%)`
+             }}>
+            {Anlagen.map((anlage) =>{
+                return <Slides Bild={anlage.Bild} Name={anlage.Name} Beschreibung={anlage.Beschreibung}/>
+            })}
+        </div>
+
+        <div className='carousel-buttons'>
+            <button className='button-arrow' onClick={() => {
+                updateIndex(activeIndex-1);
+            }}>
+                <span className='material-aymbols-outlines'>arrow_back_ios</span>{" "}
+            </button>
+            <div className='indicators'>
+                {Anlagen.map((anlage, index) => {
+                    return (
+                        <button className='indicator-buttons' onClick={() => {
+                            updateIndex(index);
+                        }}>
+                            <span className={`material-symbols-outlined ${
+                                index === activeIndex
+                                ? "indicator-symbol-active"
+                                : "indicator-symbol"
+                            }`}>
+                                radio_button_checked
+                            </span>
+                        </button>
+                    );
+                })}
+            </div>
+            <button className='button-arrow'
+                    onClick={() => {
+                        updateIndex(activeIndex + 1);
+                    }}>
+                <span className='material-symbols-outlined'>arrow_forward_ios</span>
+            </button>
+        </div>
     </div>
-  )
-}
+  );
+};
 
 export default HorAnlagenScroll
 
@@ -42,4 +94,4 @@ const Anlagen = [
         Beschreibung: "Die Sporthalle. Hier findet verschiedenen Training statt. Basketball, \n Handball, Volleyball und vieles mehr Trainieren hier.",
         Bild: Sporthalle,
     },
-]
+];
