@@ -1,6 +1,6 @@
 import React from 'react'
 import './Anlagen.css'
-import { HorClickScroll } from '../../components'
+import { HorAnlagenScroll } from '../../components'
 
 const Anlagen = () => {
   return (
@@ -12,7 +12,7 @@ const Anlagen = () => {
                auf den Seiten der Anlagen findest du mehr Informationen.
             </p>
       </div>
-      <HorClickScroll />
+      <HorAnlagenScroll />
     </div>
   )
 }
