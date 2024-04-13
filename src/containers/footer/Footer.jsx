@@ -20,7 +20,7 @@ const Footer = () => {
             <p><b>Donnerstag: </b>8:30 - 11:30 Uhr <br/>Oder nach Absprache <br/><br/><b>Absprachen über: </b>02653/7169741</p>
           </div>
           <div className='info-text'>
-            <h2>Wichtige Links</h2>
+            <h2>Links</h2>
             <a href="#Impressum"><b>Impressum</b></a><br/>
             <a href="#Datenschutz"><b>Datenschutz</b></a><br/>
             <a href="#UeberUns"><b>Über uns</b></a><br/>

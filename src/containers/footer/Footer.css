@@ -19,6 +19,8 @@
     color: var(--color-text-header);
     font-family: var(--font-family);
     margin-left: 10px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .info-text h2{
@@ -28,16 +30,6 @@
     letter-spacing: 0.04rem;
     padding-bottom: 16px;
     margin-top: 10px;
-}
-
-.info-text p{
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.info-text a{
-    font-size: 16px;
-    line-height: 22px;
 }
 
 
@@ -50,15 +42,119 @@
 .tus_footer_content_sponsors{
     display: flex;
     flex-direction: row;
-    height: 80px;
     filter: grayscale(100%);
     margin-top: -4.4rem;
     /*justify-content: space-between*/
 }
 
 .tus_footer_content_sponsors img{
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    height: 80px;
+    margin-left: 10px;
 }
 
 
+@media screen and (max-width: 1050px) {
 
+
+    .info-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .info-text h2{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .tus_footer_image img{
+        width: 300px;
+    }
+
+    .tus_footer_content_sponsors{
+        margin-top: -3rem;
+    }
+
+    .tus_footer_content_sponsors img{
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .info-text {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .info-text h2{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .tus_footer_image img{
+        width: 230px;
+    }
+
+    .tus_footer_content_sponsors{
+        margin-top: -2rem;
+    }
+
+    .tus_footer_content_sponsors img{
+        height: 30px;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+
+    .tus_footer_content_info{
+        flex-direction: column;
+
+    }
+
+    .info-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-text {
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 1.5rem;
+    }
+
+    .info-text h2{
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .tus_footer_image img{
+        width: 280px;
+        
+    }
+
+    .tus_footer_content_sponsors{
+        margin-top: 1rem;
+    }
+
+    .tus_footer_content_sponsors img{
+        height: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .tus_footer_image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+ 
