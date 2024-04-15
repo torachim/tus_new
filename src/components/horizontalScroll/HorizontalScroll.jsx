@@ -13,7 +13,7 @@ const HorizontalScroll = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [1, 0], ["5%", "-50"]);
+  const x = useTransform(scrollYProgress, [1, 0], ["5%", "-75"]);
 
   return (
     <section ref={targetRef} className='hor_scroller'>

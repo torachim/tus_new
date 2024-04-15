@@ -7,8 +7,8 @@
 
 .hor_scroller_div{
     display: flex;
-    overflow: hidden;
-    top: 0;
+    position: sticky;
+    left: 0;
     align-items: center;
 }
 
