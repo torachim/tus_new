@@ -53,6 +53,8 @@
     margin-left: 10px;
 }
 
+.info-text a:hover{text-decoration: underline;}
+
 
 @media screen and (max-width: 1050px) {
 
@@ -148,6 +150,54 @@
     .tus_footer_content_sponsors img{
         height: 30px;
         margin-bottom: 1rem;
+    }
+
+    .tus_footer_image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .tus_footer_content_info{
+        flex-direction: column;
+
+    }
+
+    .info-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 1rem;
+    }
+
+    .info-text h2{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .tus_footer_image img{
+        width: 210px;
+        
+    }
+
+    .tus_footer_content_sponsors{
+        margin-top: 0.7rem;
+    }
+
+    .tus_footer_content_sponsors img{
+        height: 25px;
+        margin-bottom: 0.8rem;
     }
 
     .tus_footer_image{
