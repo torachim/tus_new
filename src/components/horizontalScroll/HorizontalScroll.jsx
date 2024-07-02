@@ -6,25 +6,33 @@ import { TbPlayFootball, TbRun, TbPlayBasketball, TbPlayHandball, TbPlayVolleyba
 import { MdSportsGymnastics, MdSportsKabaddi, MdSportsTennis } from 'react-icons/md'
 import { FaTableTennisPaddleBall } from "react-icons/fa6";
 
+
+const CardContainer = (props) => (
+  <div className="cards-container"> 
+    {
+      props.cards.map((card) => (
+        <div>
+          <Hovercard Bild={ card.bild }
+                      Link = { card.link }
+                      ButtonText = { card.button_text} />
+        </div>
+      ))
+    }
+  </div>
+)
+
+
 const HorizontalScroll = () => {
 
-  const targetRef = useRef(null);
+  /**const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
-  });
+  });**/
 
-  const x = useTransform(scrollYProgress, [1, 0], ["5%", "-75"]);
+  //const x = useTransform(scrollYProgress, [1, 0], ["5%", "-75"]);
 
   return (
-    <section ref={targetRef} className='hor_scroller'>
-      <div className='hor_scroller_div'>
-        <motion.div style={{ x }} className='hor_scroller_motion'>
-          {cards.map((card) => {
-            return <Hovercard Bild={card.bild} Link={card.link} ButtonText={card.button_text}/>
-          })}
-        </motion.div>
-      </div>
-    </section>
+      <CardContainer cards = { cards } />
   )
 }
 
@@ -82,3 +90,12 @@ const cards = [
     button_text: 'Tischfußball',
   },
 ]
+
+
+/**<motion.div style={{ x }} className='hor_scroller_motion'>
+{cards.map((card) => {
+  return <Hovercard Bild={card.bild} Link={card.link} ButtonText={card.button_text}/>
+})}
+</motion.div>**/
+
+//ref={targetRef}

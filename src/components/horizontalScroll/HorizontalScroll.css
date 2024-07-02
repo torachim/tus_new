@@ -1,19 +1,29 @@
-.hor_scroller{
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    left:0;
+    gap: 1rem;
+    overflow-x: auto;
     position: relative;
-    background-color: inherit;
-    height: inherit;
-    margin-bottom: 15px;
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
-.hor_scroller_div{
+
+/**.hor_scroller_div{
     display: flex;
     position: sticky;
     left: 0;
+    margin:auto;
+    overflow: hidden;
     align-items: center;
-}
+}**/
 
-.hor_scroller_motion{
+/**.hor_scroller_motion{
     display: flex;
     flex-direction: row;
     gap: 10px;
-}
+}**/
