@@ -1,5 +1,4 @@
-import { React, useRef } from 'react'
-import { motion, useTransform, useScroll } from 'framer-motion'
+import { React } from 'react'
 import './HorizontalScroll.css'
 import { Hovercard } from '../../components'
 import { TbPlayFootball, TbRun, TbPlayBasketball, TbPlayHandball, TbPlayVolleyball, TbSoccerField} from 'react-icons/tb'
@@ -23,13 +22,6 @@ const CardContainer = (props) => (
 
 
 const HorizontalScroll = () => {
-
-  /**const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-  });**/
-
-  //const x = useTransform(scrollYProgress, [1, 0], ["5%", "-75"]);
 
   return (
       <CardContainer cards = { cards } />
@@ -91,11 +83,3 @@ const cards = [
   },
 ]
 
-
-/**<motion.div style={{ x }} className='hor_scroller_motion'>
-{cards.map((card) => {
-  return <Hovercard Bild={card.bild} Link={card.link} ButtonText={card.button_text}/>
-})}
-</motion.div>**/
-
-//ref={targetRef}

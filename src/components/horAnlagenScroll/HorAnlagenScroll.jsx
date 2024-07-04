@@ -4,66 +4,57 @@ import Waldsportplatz from '../../assets/Waldsportplatz.jpeg'
 import Tennisplatz from '../../assets/Tennisball.jpeg'
 import MeGeHa from '../../assets/mgh.jpeg'
 import Sporthalle from '../../assets/sporthalle.jpeg'
+import { SlArrowRight, SlArrowLeft } from 'react-icons/sl'
 import './HorAnlagenScroll.css'
 import { Slides } from '../../components'
 
+
+
 const HorAnlagenScroll = () => {
 
-  const [activeIndex, setActiveIndex] = useState(0);
-  
-  const updateIndex = (newIndex) => {
-    if (newIndex < 0){
-        newIndex = 0;
-    }
-    else if (newIndex >= Anlagen.length){
-        newIndex = Anlagen.length -1;
-    }
+    let cards = Anlagen.map((anlage, index) =>
+    <Slides key={index} anlage={anlage} />
+    );
 
-    setActiveIndex(newIndex);
-  };
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-  return (
-    <div className='carousel'>
-        <div className='carousel-inner'
-             style={{transform: `translate(-${activeIndex * 100}%)`
-             }}>
-            {Anlagen.map((anlage) =>{
-                return <Slides anlage={anlage} />;
-            })}
-        </div>
+    const goToPrevious = () => {
+        const isFirstCard = currentIndex === 0;
+        const newIndex = isFirstCard ? cards.length - 1 : currentIndex - 1;
+        setCurrentIndex(newIndex);
+    };
 
-        <div className='carousel-buttons'>
-            <button className='button-arrow' onClick={() => {
-                updateIndex(activeIndex-1);
-            }}>
-                <span className='material-aymbols-outlines'>arrow_back_ios</span>{" "}
-            </button>
-            <div className='indicators'>
-                {Anlagen.map((anlage, index) => {
-                    return (
-                        <button className='indicator-buttons' onClick={() => {
-                            updateIndex(index);
-                        }}>
-                            <span className={`material-symbols-outlined ${
-                                index === activeIndex
-                                ? "indicator-symbol-active"
-                                : "indicator-symbol"
-                            }`}>
-                                radio_button_checked
-                            </span>
-                        </button>
-                    );
-                })}
+    const goToNext = () => {
+        const isLastCard = currentIndex === cards.length - 1;
+        const newIndex = isLastCard ? 0 : currentIndex + 1;
+        setCurrentIndex(newIndex);
+    };
+
+    const goToIndex = (index) => {
+        setCurrentIndex(index);
+    };
+
+    return (
+        <div className='carousel_and_indicators'>
+            <div className="carousel">
+                <button className="carousel-button" onClick={goToPrevious}><SlArrowLeft/></button>
+                <div className="carousel-card">
+                    {cards[currentIndex]}
+                </div>
+                <button className="carousel-button" onClick={goToNext}><SlArrowRight/></button>
             </div>
-            <button className='button-arrow'
-                    onClick={() => {
-                        updateIndex(activeIndex + 1);
-                    }}>
-                <span className='material-symbols-outlined'>arrow_forward_ios</span>
-            </button>
+            <div className="carousel-indicators">
+                    {cards.map((card, index) => (
+                        <span
+                            key={index}
+                            className={`carousel-indicator ${currentIndex === index ? 'active' : ''}`}
+                            onClick={() => goToIndex(index)}
+                        ></span>
+                    ))}
+                </div>
         </div>
-    </div>
-  );
+    );
+
 };
 
 export default HorAnlagenScroll

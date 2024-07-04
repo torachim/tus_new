@@ -11,19 +11,3 @@
         display: none;
     }
 }
-
-
-/**.hor_scroller_div{
-    display: flex;
-    position: sticky;
-    left: 0;
-    margin:auto;
-    overflow: hidden;
-    align-items: center;
-}**/
-
-/**.hor_scroller_motion{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}**/
