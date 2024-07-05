@@ -11,7 +11,7 @@ const Footer = () => {
       <div className='tus_footer_content'>
         <div className='tus_footer_content_info'>
           <div className='info-text'>
-            <h2>Turn- und Sportverein 1901 ev.</h2>
+            <h2>Turn- und Sportverein 1901 eV.</h2>
             <p>Postfach 1108 <br/>Poststraße 19 <br/>56759 Kaisersesch <br/>Deutschland</p><br/><br/>
             <p><b>E-Mail: </b>info@tus-kaisersesch.de <br/><b>Tel: </b>02653/3648</p>
           </div>

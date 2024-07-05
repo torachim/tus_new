@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Abteilungen, Footer, Header,  Kurse, Anlagen} from './containers';
-import { Cta, Navbar, Brand} from './components';
+import {  Navbar } from './components';
 
 import './App.css'
 
