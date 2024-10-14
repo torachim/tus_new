@@ -1,26 +1,24 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { Abteilungen, Footer, Header,  Kurse, Anlagen} from './containers';
-import {  Navbar } from './components';
 
-import './App.css'
+import Mainpage from'./pages/Mainpage';
+import Aktuelles from './pages/Aktuelles';
 
 
 const App = () => {
   return (
-    <div className="App">
-      <div className="gradient__bg">
-        <Navbar />
-      </div>
-      <Header />
-      <Abteilungen />   
-      <Kurse />
-      <Anlagen />
-      <footer className='site-footer'>
-        <Footer />
-      </footer>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Mainpage />}/>
+        <Route path="/aktuelles" element={<Aktuelles />}/>
+        <Route path="*" element={<h2>Seite nicht gefunden</h2>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
+
+
+
 
 export default App

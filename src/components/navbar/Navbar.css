@@ -4,6 +4,16 @@
     align-items: center;
 
     padding: 0.5rem 5rem;
+
+    background: -moz-radial-gradient(circle at 3% 25%, rgba(242, 239, 239, 1) 0%, rgba(173, 171, 173, 1) 100%);
+    
+    background: -webkit-radial-gradient(circle at 3% 25%, rgba(242, 239, 239, 1) 0%, rgba(173, 171, 173, 1) 100%);
+
+    background: -o-radial-gradient(circle at 3% 25%, rgba(242, 239, 239, 1) 0%, rgba(173, 171, 173, 1) 100%);
+
+    background: -ms-radial-gradient(circle at 3% 25%, rgba(242, 239, 239, 1) 0%, rgba(173, 171, 173, 1) 100%);
+
+    background: radial-gradient(circle at 3% 25%, rgba(242, 239, 239, 1) 0%, rgba(173, 171, 173, 1) 100%);
 }
 
 .tus__navbar-links {

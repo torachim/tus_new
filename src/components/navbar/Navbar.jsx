@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 import './Navbar.css'
 import logo from '../../assets/Logo.png'
 
@@ -63,7 +64,7 @@ const Menu = () => (
         <AnlagenMenu />
     </div>
   </p>
-  <p><a href = "#Aktuelles">Aktuelles</a></p>
+  <p><Link to='/aktuelles'>Aktuelles</Link></p>
   <p><a href = "#Mitgliedschaft">Mitgliedschaft</a></p>
   <p><a href = "#Überuns">Über uns</a></p>
   <p><a href = "#Kontak">Kontakt</a></p>
@@ -78,7 +79,9 @@ const Navbar = () => {
     <div className = "tus__navbar">
       <div className = "tus__navbar-links">
         <div className = "tus__navbar-links-logo">
-          <img src = {logo} alt= "logo" />
+          <Link to='/'>
+            <img src = {logo} alt= "logo" />
+          </Link>
         </div>
         <div className = "tus__navbar-links_container">
           <Menu />
