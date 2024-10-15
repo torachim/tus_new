@@ -24,3 +24,9 @@ yarn-error.log*
 
 #pictures
 /assets
+
+#database
+*.db
+
+#articles
+/artikel
