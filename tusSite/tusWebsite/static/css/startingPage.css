@@ -1,0 +1,683 @@
+.welcomeWindow{
+    display: flex;
+    background-color: rgb(32,32,32);
+    color: rgb(243, 236, 236);
+}
+
+.welcomeLeft{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.welcomeText h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    margin-left: 2rem;
+    margin-top: -5%;
+    letter-spacing: -0.04em;
+    background: -webkit-linear-gradient(45deg, #7a0f0f, #ffb1b1);
+    background-clip: unset;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;   
+}
+
+.welcomeText p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: aliceblue;
+    margin-left: 3%;
+}
+
+#info{
+    margin-top: -7%;
+    margin-left: 6rem;
+}
+
+.welcomeButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 10rem;
+}
+
+#tusButton{
+    background-color: rgb(235, 111, 111);
+    margin-right: 5rem;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: medium;
+    width: 128px;
+    height: 49px;
+    cursor: pointer;
+}
+
+.welcomeRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.welcomeRight img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#tusButton:hover {background-color: rgb(253, 71, 71);}
+
+
+
+.topNews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.newsKarte{
+    width: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #f1f1f3;
+    box-shadow: 0 8 16 9 rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.newsKarte > * + * {
+    margin-top: 1.1rem;
+  }
+
+.newsKarte p{
+    color: #3c3852;
+    font-size: 0.86rem;
+}
+
+.newsKarte h5{
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top:1rem;
+}
+
+.newsDate {
+    color: #6e6b80;
+    font-size: 0.8rem;
+}
+
+.cardArrow{
+    position: absolute;
+    background: rgb(235, 111, 111);
+    padding: 0.4rem;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px;
+    bottom: 0;
+    right: 0;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardArrow svg{
+    transition: 0.2s;
+}
+
+.newsKarte:hover h5{
+    color: rgb(235, 111, 111);
+    text-decoration: underline;
+}
+
+.newsKarte:hover .cardArrow{
+    background: #111;
+}
+
+.newsKarte:hover .cardArrow svg{
+    transform: translateX(3px);
+}
+
+.abteilungen{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    color: rgb(242, 239, 239);
+    overflow: hidden;
+}
+
+.abteilungenText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.abteilungenText h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: rgb(242, 239, 239);
+}
+
+.abteilungenText p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(169, 168, 168);
+    margin-top: -3rem;
+}
+
+.abteilungenCardSlider{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+    overflow-x: auto;
+    left: 0;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.card{
+    min-width: 16rem;
+    height: 12rem;
+    border-radius: 1rem;
+    overflow: visible;
+    position: relative;
+    padding: 5px;
+    background: #f1f1f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    user-select: none;
+    transition: all 0.3s;  
+}
+
+.cardImage{
+    width: 50%;
+}
+
+.cardText{
+    color: #111;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.card:hover {
+    border: 1px solid #ffb1b1;
+    transform: scale(1.03);
+}
+
+.card:hover .cardText{
+    color: rgb(253, 71, 71);
+}
+
+.card:hover .cardImage{
+    filter: brightness(0) saturate(100%) invert(41%) sepia(46%) saturate(2547%) hue-rotate(333deg) brightness(100%) contrast(110%);
+}
+  
+.card:active {
+   transform: scale(0.95) rotateZ(1.1deg);
+}
+
+.kurse {
+    display: flex;
+    background-color: rgb(32,32,32);
+    color: rgb(243, 236, 236);
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.kurseLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.kurseLinks img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kurseRechts{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+}
+
+.kurseText{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.kurseText h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    background: -webkit-linear-gradient(45deg, #7a0f0f, #ffb1b1);
+    background-clip: unset;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+}
+
+.kurseText p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-top: -2rem;
+    margin-left: 4rem;
+}
+
+.kurseButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 20rem;
+}
+
+.anlagen{
+    display: flex;
+    flex-direction: column;
+}
+
+.anlagenCardsSection{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: space-between;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.anlagenCards{
+    position: relative;
+    width: 16rem;
+    height: 12rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.cardImageAnlage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.anlagenCards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.cardContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.anlagenCards:hover .cardContent{
+    transform: rotateX(0deg);
+}
+
+.anlagenCards:hover img{
+    scale: 0;
+}
+
+.cardTitle {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+
+.cardDescription {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+
+.sponsors{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.sponsors img{
+    width: 12rem;
+    height: auto;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: gray;
+}
+
+.sponsors img:hover{
+    filter: none;
+    transform: scale(1.021);
+    background-color: #f1f1f3;
+}
+
+@media screen and (max-width: 1024px){
+    .welcomeButtons{
+        margin: 1rem 4rem;
+    }
+
+    .welcomeText h2{
+        font-size: 44px;
+    }
+
+    .welcomeText p{
+        font-size: 20px;
+    }
+
+    #info{
+        margin-left: 3rem;
+    }
+
+    .welcomeButtons button{
+        margin-right: 2rem;
+    }
+
+    .newsKarte{
+        width: 19%;
+    }
+
+    .kurseText h5{
+        font-size: 44px;
+    }
+    
+    .kurseText p{
+        font-size: 20px;
+        margin-left: 2rem;
+    }
+    
+    .kurseButton{
+        margin: 1rem 9rem;
+    }
+
+    .anlagenCardsSection{
+        overflow-x: scroll;
+        gap: 1.5rem;
+    }
+
+    .anlagenCards{
+        min-width: 16rem;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .welcomeText h2{
+        font-size: 44px;
+    }
+
+    .welcomeText p{
+        font-size: 18px;
+    }
+
+    #info{
+        margin-left: 4rem;
+    }
+
+    .welcomeButtons{
+        margin: 1rem 5rem;
+    }
+
+    #tusButton{
+        margin-right: 3rem;
+    }
+
+    .newsKarte{
+        width: 17%;
+    }
+
+    .abteilungenText h3{
+        font-size: 58px;
+        font-weight: bold;
+    }
+    
+    .abteilungenText p{
+        font-size: 18px;
+        margin-top: -3rem;
+    }
+
+    .kurseText h5{
+        font-size: 44px;
+    }
+    
+    .kurseText p{
+        font-size: 18px;
+        margin-left: 2rem;
+    }
+    
+    .kurseButton{
+        margin: 1rem 3rem;
+    }
+
+    .anlagenCardsSection{
+        align-items: center;
+        gap: 1rem;
+        overflow-x: scroll;
+    }
+    
+    .anlagenCards{
+        min-width: 14rem;
+        height:12rem;
+        box-shadow: 0 0 0 3px #ffffff80;
+    }
+    
+    .cardContent{
+        padding: 1rem;
+    }
+    
+    .cardTitle {
+        font-size: 22px;
+      }
+    
+    .cardDescription {
+        font-size: 14px;
+      }
+
+      .sponsors{
+        gap: 1.5rem;
+    }
+    
+    .sponsors img{
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .welcomeLeft{
+        width: 100%;
+    }
+    
+    .welcomeRight img{
+        display: none;
+    }
+
+    .welcomeText h2{
+        font-size: 42px;
+    }
+
+    .welcomeText p{
+        font-size: 20px;
+    }
+
+    #info{
+        margin-left: 4rem;
+    }
+
+    .welcomeButtons {
+        margin: 0.5rem 5rem
+    }
+
+    #tusButton{
+        margin-right: 2.5rem;
+        font-size: 12px;
+        width: 95px;
+        height: 37px;
+    }
+
+    .topNews{
+        display: grid;
+        grid-template-columns: 20% 20%;
+        grid-row: auto auto;
+        grid-row-gap: 10px;
+    }
+
+    .newsKarte{
+        width: 110px;
+        margin-left: -2rem;
+    }
+
+    .newsKarte h5 {
+        font-size: 1rem;
+    }
+
+    .newsKarte p {
+        font-size: 0.7rem;
+    }
+
+    .newsDate{
+        font-size: 0.64rem;
+    }
+
+    .abteilungen{
+        margin-top: 0.4rem;
+    }
+
+    .abteilungenText h3{
+        font-size: 42px;
+        font-weight: bold;
+    }
+    
+    .abteilungenText p{
+        font-size: 12px;
+        margin-top: -3rem;
+    }
+
+    .card{
+        min-width: 8rem;
+        height: 6rem;
+        border-radius: 0.5rem;
+    }
+
+    .cardImage{
+        width: 35%;
+    }
+    
+    .cardText{
+        color: #111;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    .kurseLinks{
+        display: none;
+    }
+        
+    .kurseLinks img{
+        display: none;
+    }
+    
+    .kurseRechts{
+        width: 80%;
+    }
+        
+    
+    .kurseText h5{
+        font-size: 42px;
+    }
+    
+    .kurseText p{
+        font-size: 20px;
+        margin-left: 2rem;
+    }
+    
+    .kurseButton{
+        margin: 0.5rem 7rem;
+    }
+
+    .anlagenCardsSection{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .anlagenCards{
+        width: 10rem;
+        height: 8rem;
+        border-radius: 6px;
+        box-shadow: 0 0 0 3px #ffffff80;
+    }
+    
+    .cardContent{
+        padding: 0.5rem;
+        border-radius: 6px;
+    }
+    
+    .cardTitle {
+        font-size: 16px;
+      }
+    
+    .cardDescription {
+        font-size: 10px;
+        line-height: 1.0;
+      }
+
+      .sponsors{
+        gap: 1rem;
+    }
+    
+    .sponsors img{
+        width: 6rem;
+    }
+}

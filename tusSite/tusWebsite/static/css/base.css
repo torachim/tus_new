@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(88,0,0);
+}
+
+a{
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(173, 171, 173);
+    width: 100%;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 10;
+    height: 100px;
+}
+
+.content{
+    margin-top: 100px;
+}
+
+.navbar img{
+    width: 100px;
+    height: 100px;
+}
+
+.navbarElement{
+    display: flex;
+    flex-direction: column;
+}
+
+#link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: Arial, Helvetica Neue, sans-serif;
+}
+
+
+.navbarDropdown{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f1f1f1;
+    box-shadow: 0 8 16 0 rgba(0,0,0,0.2);
+    position: absolute;
+    margin-top: 23px;
+}
+
+.navbarDropdown a{
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    color: black;
+}
+
+.navbar i{
+    display: none;
+    cursor: pointer;
+}
+
+.burgerMenu{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+    background: #f1f1f1;
+    position: absolute;
+    padding: 1rem;
+    top: 40px;
+    right: 80px;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.burgerMenu a{
+    margin: 1rem 0;
+}
+
+.navbarElement:hover {text-decoration: underline;}
+.navbarElement:hover .navbarDropdown{display: flex;}
+.navbarDropdown a:hover {color: rgb(150,0,0);}
+
+.tusFooter{
+    background-color: #A9A9A9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.infoText{
+    display: flex;
+    flex-direction: column;
+    color: rgb(243, 236, 236);
+    font-family:Arial, Helvetica Neue, sans-serif;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.infoText h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.infoText a{
+    text-decoration: none;
+    color: rgb(243, 236, 236);
+}
+
+.tusFooter img{
+    width: 30vh;
+    filter: grayscale(100%);
+    opacity: 25%;
+    position: relative;
+}
+
+@media screen and (max-width: 821px) {
+    .navbar{
+        height: 75px;
+    }
+
+    .content{
+        margin-top: 75px;
+    }
+
+    .navbar img {
+        width: 75px;
+        height: 75px;
+    }
+
+    #link{
+        font-size: 16px;
+    }
+
+    .infoText{
+        font-size: 12px;
+    }
+
+    .infoText h2{
+        font-size: 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 568px) {
+    .navbar{
+        height: 50px;
+    }
+
+    .content{
+        margin-top: 50px;
+    }
+
+    .navbarElement{
+        display: none;
+    }
+
+    .navbar i{
+        display: flex;
+    }
+
+    .navbar img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .tusFooter{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infoText{
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .tusFooter img{
+        width: 15vh;
+    }
+    
+}
+
+
+.scale-up-ver-top {
+	-webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+ @-webkit-keyframes scale-up-ver-top {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  @keyframes scale-up-ver-top {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }

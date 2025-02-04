@@ -1,0 +1,119 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block extraCSS %}{% endblock %}
+    <script src="https://kit.fontawesome.com/179535dd9d.js" crossorigin="anonymous"></script>
+    <title>{% block title %}TuS{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="/"><img src="{% static 'images/Logo.png' %}" alt="Logo"></a>
+            <div class="navbarElement">
+                <a id="link" href="#Abteilungen">Abteilungen</a>
+                <div class="navbarDropdown scale-up-ver-top">
+                    <a href="#Basketball">Basketball</a>
+                    <a href="#Fußball">Fußball</a>
+                    <a href="#Handball">Handball</a>
+                    <a href="#Judo">Judo</a>
+                    <a href="#Leichtathletik">Leichtathletik</a>
+                    <a href="#Tennis">Tennis</a>
+                    <a href="#Tischfußball">Tischfußball</a>
+                    <a href="#Tischtennis">Tischtennis</a>
+                    <a href="#Turnen">Turnen</a>
+                    <a href="#Volleyball">Volleyball</a>
+                </div>
+            </div>
+            <div class="navbarElement">
+                <a id="link" href="#Kurse">Kurse</a>
+                <div class="navbarDropdown scale-up-ver-top">
+                    <a href = "#Aktivsport">Aktivsport</a>
+                    <a href = "#Ballet">Ballet</a>
+                    <a href = "#Bewegungsfoerderung">Bewegungsförderung</a>
+                    <a href = "#Breakletics">Breakletics</a>
+                    <a href = "#Dance-Fitness">Dance-Fitness</a>
+                    <a href = "#Dance-Workout">Dance-Workout</a>
+                    <a href = "#FitUndFunky">Fit & Funky</a>
+                    <a href = "#FitForFun">Fit for Fun</a>
+                    <a href = "#HipHop">Hip Hop</a>
+                    <a href = "#Kleinkinderturnen">Kleinkinderturnen</a>
+                    <a href = "#Linedance">Linedance</a>
+                    <a href = "#Pilatis">Pilatis</a>
+                    <a href = "Powerworkout">Powerworkout</a>
+                </div>
+            </div>
+            <div class="navbarElement">
+                <a id="link" href="#Anlagen">Anlagen</a>
+                <div class="navbarDropdown scale-up-ver-top">
+                    <a href = "#MehrGenerationenHaus">Mehr-Generationen-Haus</a>
+                    <a href = "#Stadion">Stadion</a>
+                    <a href = "#Sporthalle">Sporthalle</a>
+                    <a href = "#Waldsportplatz">Waldsportplatz</a>
+                    <a href = "#Tennisplatz">Tennisplatz</a>
+                </div>
+            </div>
+            <div class="navbarElement">
+                <a id="link" href="#aktuelles">Aktuelles</a>
+            </div>
+            <div class="navbarElement">
+                <a id="link" href="#Mitgliedschaft">Mitgliedschaft</a>
+            </div>
+            <div class="navbarElement">
+                <a id="link" href="#ÜberUns">Über Uns</a>
+            </div>
+            <div class="navbarElement">
+                <a id="link" href="#Kontakt">Kontakt</a>
+            </div>
+
+            <i id="burger" class="fa-solid fa-bars"></i>
+            <div id="burgerMenu" class="burgerMenu scale-up-ver-top">
+                <i id="closeMenu" class="fa-solid fa-xmark"></i>
+                <a id="link" href="#Abteilungen">Abteilungen</a>
+                <a id="link" href="#Kurse">Kurse</a>
+                <a id="link" href="#Anlagen">Anlagen</a>
+                <a id="link" href="#Aktuelles">Aktuelles</a>
+                <a id="link" href="#Mitgliedschaft">Mitgliedschaft</a>
+                <a id="link" href="#ÜberUns">Über Uns</a>
+                <a id="link" href="#Kontakt">Kontakt</a>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        {% block content %}
+        <!-- Content from child page -->
+        {% endblock %}
+    </div>
+
+    {% block extraJS %}{% endblock %}
+
+    <footer class="tusFooter">
+        <div class="infoText">
+            <h2>Turn- und Sportverein 1901 eV.</h2>
+            <p>Postfach 1108 <br/>Poststraße 19 <br/>56759 Kaisersesch <br/>Deutschland</p>
+            <p><b>E-Mail: </b>info@tus-kaisersesch.de <br/><b>Tel: </b>02653/3648</p>
+        </div>
+        <div class="infoText">
+            <h2>Bürozeiten</h2>
+            <p><b>Donnerstag: </b>8:30 - 11:30 Uhr <br/>Oder nach Absprache <br/><br/><b>Absprachen über: </b>02653/7169741</p>
+        </div>
+        <div class="infoText">
+            <h2>Links</h2>
+            <a href="#Impressum"><b>Impressum</b></a><br/>
+            <a href="#Datenschutz"><b>Datenschutz</b></a><br/>
+            <a href="#Kontakte"><b>Kontakte</b></a><br/>
+            <a href="#Vereinssatzung"><b>Vereinssatzung</b></a><br/>
+        </div>
+        <div class="footerImage">
+            <img src="{% static 'images/Logo.png' %}" alt="logo">
+        </div>
+    </footer>
+
+    <script type="module" src="{% static  'js/base.js' %}"></script>
+    
+</body>
+</html>
