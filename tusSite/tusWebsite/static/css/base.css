@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(88,0,0);
+    background-color: rgb(120, 1, 1);
 }
 
 a{
@@ -13,7 +13,7 @@ a{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(173, 171, 173);
+    background-color: rgb(227, 225, 227);
     width: 100%;
     margin: 0;
     top: 0;

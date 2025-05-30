@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 687.44 687.44">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 84.28px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #1d1d1b;
+        font-family: Helvetica, Helvetica;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke: #1d1d1b;
+      }
+
+      .cls-2 {
+        fill: #e6362e;
+        stroke: #e6362e;
+      }
+
+      .cls-3 {
+        font-size: 84.33px;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke-width: 15px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-4" cx="343.72" cy="343.72" r="336.22"/>
+  <circle class="cls-2" cx="343.72" cy="343.72" r="293.5"/>
+  <text class="cls-1" transform="translate(255.68 145.37)"><tspan x="0" y="0">TUS</tspan></text>
+  <text class="cls-3" transform="translate(84.63 426.37) rotate(66.04)"><tspan x="0" y="0">K</tspan></text>
+  <text class="cls-3" transform="translate(111.66 485.11) rotate(53.24)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-3" transform="translate(150.81 534.2) rotate(43.06)"><tspan x="0" y="0">I</tspan></text>
+  <text class="cls-3" transform="translate(172.66 555.86) rotate(32.04)"><tspan x="0" y="0">S</tspan></text>
+  <text class="cls-3" transform="translate(229.61 589.77) rotate(16.79)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-3" transform="translate(292.03 607.53) rotate(3.62)"><tspan x="0" y="0">R</tspan></text>
+  <text class="cls-3" transform="translate(360.32 611.07) rotate(-8.12)"><tspan x="0" y="0">S</tspan></text>
+  <text class="cls-3" transform="translate(425.37 600.8) rotate(-22.69)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-3" transform="translate(486.52 573.59) rotate(-38.88)"><tspan x="0" y="0">S</tspan></text>
+  <text class="cls-3" transform="translate(537.34 530.98) rotate(-54.14)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-3" transform="translate(577.12 473.95) rotate(-67.28)"><tspan x="0" y="0">H</tspan></text>
+  <text class="cls-3" transform="translate(70.41 352.72)"><tspan x="0" y="0">19</tspan></text>
+  <text class="cls-3" transform="translate(518.67 352.72)"><tspan x="0" y="0">01</tspan></text>
+  <g>
+    <rect class="cls-5" x="369.27" y="162.68" width="116.36" height="127.44"/>
+    <rect class="cls-5" x="197.01" y="162.68" width="116.36" height="127.44"/>
+    <path class="cls-5" d="M369.27,344.85v151.39s88.65-53.44,107.49-151.39h-107.49Z"/>
+    <path class="cls-5" d="M310.89,344.85v151.39s-88.65-53.44-107.49-151.39h107.49Z"/>
+  </g>
+  <g>
+    <polygon points="242.51 190.84 254.38 169.79 267.15 190.84 293.67 190.84 282.5 211.17 295.07 232.93 267.04 232.93 254.44 252.56 242.51 232.93 216.57 232.93 230.13 211.18 216.57 190.84 242.51 190.84"/>
+    <path d="M293.65,249.76c-5.74,22.8-23.29,33.91-46.58,30.5-14.05-2.05-29.91-15.67-28.41-30.49,22.65,19.46,51.95,17.98,74.99,0Z"/>
+  </g>
+</svg>
